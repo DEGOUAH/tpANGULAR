@@ -2,3 +2,15 @@
 <input readonly [(ngModel)]="id">
 <br>
 mon id {{id}}
+
+<select [(ngModel)]="id">
+    <option [value]="poke.id" *ngFor="let poke of pokes">
+        {{poke.name}}
+    </option>
+</select>
+
+<ul>
+    <li *ngFor="let poke of pokes">
+        {{poke.name}}
+    </li>
+</ul>
