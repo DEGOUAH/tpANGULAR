@@ -22,4 +22,8 @@ pokes : Pokemon[] = [];
   this.pokes.push(new Pokemon('5', 'charmandar'))
 
   }
+
+  go(){
+    console.log(this.selectedPokeId);
+  }
 }
