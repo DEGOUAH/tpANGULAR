@@ -22,11 +22,11 @@ mon pokemon selectionné est {{selectedPokeId}}
  
 
 <div *ngIf="pokeDetail">
-<!--     <app-pokedetail [detail]='pokeDetail'></app-pokedetail>
- -->    
-    <ul>
+    <app-pokedetail [detail]='pokeDetail'></app-pokedetail>
+    
+ <!--    <ul>
         <li *ngFor="let ability of pokeDetail.abilities">
             {{ability.ability.name}}  
         </li>
-    </ul>
+    </ul> -->
 </div>
