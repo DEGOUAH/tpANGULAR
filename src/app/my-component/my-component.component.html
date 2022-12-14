@@ -15,8 +15,18 @@ mon pokemon selectionné est {{selectedPokeId}}
 </select>
 <button (click)="go()">GO</button>
 
-<!-- <ul>
-    <li *ngFor="let poke of pokes">
-        {{poke.name}}
-    </li>
-</ul> -->
+<br>
+<div *ngIf="pokeDetail">
+    Le pokemon selectionné est {{pokeDetail.name}} :
+</div>
+ 
+
+<div *ngIf="pokeDetail">
+<!--     <app-pokedetail [detail]='pokeDetail'></app-pokedetail>
+ -->    
+    <ul>
+        <li *ngFor="let ability of pokeDetail.abilities">
+            {{ability.ability.name}}  
+        </li>
+    </ul>
+</div>
